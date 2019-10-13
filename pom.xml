@@ -10,7 +10,7 @@
 
   <groupId>com.leonvanbokhorst</groupId>
   <artifactId>quickstart</artifactId>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
 
   <dependencies>
     <!-- JUnit 5 -->
@@ -46,7 +46,7 @@
            to execute the unit tests of an application. -->
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.22.2</version>
+        <version>3.0.0-M3</version>
       </plugin>
     </plugins>
   </build>
