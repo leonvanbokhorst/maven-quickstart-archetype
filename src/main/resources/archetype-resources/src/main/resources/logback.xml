@@ -11,16 +11,16 @@
     <file>logs\logFile.log</file>
     <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
       <!-- daily rollover -->
-      <fileNamePattern>logFile.%d{yyyy-MM-dd}.log</fileNamePattern>
-      <!-- keep 7 days' worth of history -->
-      <maxHistory>7</maxHistory>
+      <fileNamePattern>logs\logFile.%d{yyyy-MM-dd}.log</fileNamePattern>
+      <!-- keep 5 days' worth of history -->
+      <maxHistory>5</maxHistory>
     </rollingPolicy>
     <encoder>
       <pattern>%d{HH:mm:ss.SSS} %-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
     </encoder>
   </appender>
 
-  <root level="debug" additivity="false">
+  <root level="info" additivity="false">
     <appender-ref ref="STDOUT"/>
     <appender-ref ref="FILE"/>
   </root>
